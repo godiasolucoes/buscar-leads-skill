@@ -6,10 +6,11 @@ Criada por Guilherme Mella (GODI.A).
 
 ## O que a skill faz
 
-1. Pergunta três coisas a quem está usando:
+1. Pergunta quatro coisas a quem está usando:
    - com o que a pessoa trabalha (ou o link do site da empresa, de onde a skill extrai os serviços);
    - a área da busca (cidade e, se quiser, bairros);
-   - quantos leads quer (10, 20, 30 ou 50).
+   - quantos leads quer (10, 20, 30 ou 50);
+   - o nome (e, se quiser, cargo e empresa) para assinar as mensagens.
 2. Busca negócios no Google Maps e lê as avaliações de cada um.
 3. Descarta negócios fechados, concorrentes diretos e franquias.
 4. Monta o diagnóstico digital de cada lead: perfil no Google, avaliações, WhatsApp, site e Instagram.
@@ -30,7 +31,7 @@ Criada por Guilherme Mella (GODI.A).
 
 ```
 buscar-leads/
-  SKILL.md              instruções da skill
+  SKILL.md              instruções da skill (é esta pasta que vai no .zip)
 exemplos/
   exemplo-saida.csv     modelo da planilha, com dados fictícios
 README.md
@@ -38,9 +39,27 @@ README.md
 
 ## Como instalar
 
-1. Baixe a pasta `buscar-leads` (ou este repositório inteiro).
-2. No Claude, adicione a skill a partir do arquivo `buscar-leads/SKILL.md`.
-3. Para usar, peça algo como "buscar leads" ou "preciso de leads para o meu negócio".
+### No Claude (site, app do computador ou celular)
+
+1. Em Settings > Capabilities, deixe ligado "Code execution and file creation" (em alguns layouts aparece como "Create and edit files").
+2. Baixe o arquivo `buscar-leads.zip` em [Releases](https://github.com/godiasolucoes/buscar-leads-skill/releases). Se preferir montar o arquivo você mesmo, compacte a pasta `buscar-leads` inteira, e não só o `SKILL.md`.
+3. Vá em Customize > Skills, clique em "+", depois em "+ Create skill" e escolha "Upload a skill".
+4. Envie o `buscar-leads.zip`. A skill aparece na lista e pode ser ligada ou desligada.
+5. Abra uma conversa nova e peça "buscar leads".
+
+Nos planos Team e Enterprise, o administrador precisa liberar Skills nas configurações da organização antes.
+
+### No Claude Code (terminal)
+
+Copie a pasta `buscar-leads` para `~/.claude/skills/`:
+
+```bash
+git clone https://github.com/godiasolucoes/buscar-leads-skill.git
+mkdir -p ~/.claude/skills
+cp -r buscar-leads-skill/buscar-leads ~/.claude/skills/
+```
+
+Skills ligadas na conta do Claude também carregam no Claude Code quando ele usa a mesma conta.
 
 ## Colunas da planilha
 
@@ -72,6 +91,8 @@ README.md
 
 - **16/11/2026, teste 1**: Nova Andradina (MS), 50 leads. Instagram e site não puderam ser verificados pela busca na web. As avaliações do Google se mostraram a melhor fonte de sinais.
 - **16/11/2026, teste 2**: mesma busca, já com leitura de avaliações e filtro de franquias. Os leads quentes caíram de 15 para 8. A conferência pelo navegador ficou pendente.
+
+- **17/11/2026, v1.1**: a skill passa a perguntar o nome para assinar as mensagens de abordagem.
 
 ## Aviso sobre dados
 
