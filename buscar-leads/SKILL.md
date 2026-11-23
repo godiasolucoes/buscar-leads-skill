@@ -1,6 +1,6 @@
 ---
 name: buscar-leads
-description: Procura leads para o negócio do usuário no Google Maps, Instagram e web. Ele informa com o que trabalha ou o link do site da empresa, a área, a quantidade e o nome para assinar as mensagens, e recebe planilha com diagnóstico digital, prioridade e mensagem de abordagem. Use sempre que pedirem leads, prospecção, lista de prospects ou "buscar leads".
+description: Procura leads para o negócio do usuário no Google Maps, Instagram e web. Ele informa com o que trabalha ou o link do site da empresa, a área, a quantidade, o nome para assinar as mensagens e, se tiver, o link do site de vendas para enviar junto, e recebe planilha com diagnóstico digital, prioridade e mensagem de abordagem. Use sempre que pedirem leads, prospecção, lista de prospects ou "buscar leads".
 ---
 
 # Buscar Leads
@@ -9,9 +9,9 @@ Encontra empresas e perfis comerciais com chance real de comprar de quem está u
 
 O valor desta skill está na confiabilidade. Uma lista de 15 leads verificados vale mais que uma de 50 com telefone errado, porque cada contato errado custa tempo e desgasta a imagem de quem aborda. Por isso, tudo que entra na planilha vem de uma fonte que foi realmente consultada.
 
-## 1. As quatro escolhas da pessoa
+## 1. As cinco escolhas da pessoa
 
-A skill começa sempre com quatro perguntas, feitas de uma vez. Se houver ferramenta de perguntas com opções clicáveis, use-a; senão, pergunte em texto, numerando as opções. Se a pessoa já informou alguma delas no pedido, não pergunte de novo.
+A skill começa sempre com cinco perguntas, feitas de uma vez. Se houver ferramenta de perguntas com opções clicáveis, use-a; senão, pergunte em texto, numerando as opções. Se a pessoa já informou alguma delas no pedido, não pergunte de novo.
 
 **1. Com o que você trabalha?**
 A pessoa responde de um destes dois jeitos:
@@ -37,6 +37,14 @@ Opções: 10, 20, 30 ou 50. O limite é 50 por rodada: acima disso a verificaç�
 Peça o nome que vai no fim de cada mensagem de abordagem e, se a pessoa quiser, o cargo e o nome da empresa. Exemplo: "Ana Souza, Consultora da Estúdio Prisma". Uma mensagem assinada por uma pessoa de verdade passa mais confiança do que uma sem nome ou com nome de empresa sozinho.
 
 Se a empresa veio do site, sugira o nome dela já preenchido e peça só o nome e o cargo. Use a assinatura exatamente como a pessoa escrever, sem acrescentar títulos. Se ela preferir não informar, siga com "[Seu nome]" no lugar da assinatura e avise no fechamento que precisa trocar antes de enviar.
+
+**5. Você tem um site ou página de vendas pronta para mandar junto?**
+Peça o link da página que a pessoa quer que o lead abra: site, página de vendas, catálogo, cartão digital ou link da bio. Um link que mostra o trabalho dá ao lead algo concreto para ver, e responde à pergunta "quem é você?" antes que ele precise fazer.
+
+- Se ela já mandou o site na primeira pergunta, pergunte se é esse mesmo o link para as mensagens ou se prefere outro.
+- Antes de usar, abra o link. Se não abrir, estiver em construção ou mostrar algo que não combina com o que ela vende, avise em uma frase e pergunte se quer seguir sem ele. Mandar um link quebrado para 50 leads queima a primeira impressão de todos de uma vez.
+- Use o link exatamente como a pessoa passou. Nunca monte, encurte ou adivinhe um endereço.
+- Se ela não tiver link, as mensagens seguem sem ele, como antes.
 
 ### Quando a pessoa manda o site
 
@@ -116,10 +124,11 @@ Uma mensagem de WhatsApp por lead, pronta para copiar:
 - Termina com uma única pergunta simples, fácil de responder.
 - Até cerca de 400 caracteres, tom cordial e direto, sem pressão, sem promessa de resultado e sem crítica ao lead. Uma avaliação negativa nunca é citada na mensagem: "clientes reclamam que vocês não respondem" vira "vi que os clientes procuram muito vocês pelo WhatsApp".
 - Assinada com a assinatura informada na quarta escolha, igual em todas as mensagens. Na primeira frase, a pessoa pode se apresentar pelo nome ("Sou a Ana, da Estúdio Prisma") quando isso soar natural. Se não houver assinatura, termine com "[Seu nome]".
+- **Link de vendas**: quando a pessoa informou um na quinta escolha, ele entra em todas as mensagens, uma vez só, logo depois da frase do serviço e antes da pergunta final. Apresente o link com uma frase curta que diga o que o lead vai ver, ligada ao serviço indicado: "Dá uma olhada em alguns trabalhos:" ou "Aqui você vê como funciona:". Um link solto, sem contexto, parece spam. Coloque o link sozinho na linha de baixo dessa frase, para o WhatsApp mostrar a prévia. O limite de cerca de 400 caracteres vale sem contar o link.
 
 Para os leads quentes, escreva cada mensagem individualmente, a partir do detalhe mais específico daquele lead. Para os mornos, mensagens no mesmo molde são aceitáveis, desde que o nome, o detalhe e o serviço sejam os daquele lead.
 
-Para quem só divulga telefone fixo, marque a mensagem como roteiro para ligação. Para leads frios, escreva "não abordar agora" no lugar da mensagem.
+Para quem só divulga telefone fixo, marque a mensagem como roteiro para ligação; nesse caso, o link vai no fim do roteiro, como "posso te mandar o link por mensagem?". Para leads frios, escreva "não abordar agora" no lugar da mensagem.
 
 As mensagens são entregues para envio manual. A skill não envia nada.
 
@@ -145,8 +154,10 @@ Entregue como planilha (tipo Sheets se disponível; senão, arquivo .xlsx). Se a
 | Fonte | Link de onde o lead foi tirado |
 | Status | Em branco, com lista de escolha: Contatado, Respondeu, Reunião, Fechado, Sem interesse |
 
+Se houver link de vendas, ele já vai dentro do texto da coluna Mensagem; não é preciso coluna separada.
+
 Título da planilha: "Leads - [empresa ou área de atuação] - [região] - [data]".
 
 ## 8. Fechamento
 
-Na resposta, junto com a planilha, diga em poucas linhas (e, se as mensagens ficaram com "[Seu nome]", lembre de trocar antes de enviar): quantos leads foram entregues e quantos de cada prioridade, os 3 melhores e por quê, quantos tiveram Instagram e site conferidos, e qualquer limitação da busca (fonte indisponível, nicho com poucos resultados na região, site da empresa que não abriu). Se a quantidade escolhida não foi atingida com qualidade, entregue menos e diga isso, em vez de completar com leads fracos.
+Na resposta, junto com a planilha, diga em poucas linhas (e, se as mensagens ficaram com "[Seu nome]", lembre de trocar antes de enviar; se havia link de vendas, diga se ele abriu na conferência): quantos leads foram entregues e quantos de cada prioridade, os 3 melhores e por quê, quantos tiveram Instagram e site conferidos, e qualquer limitação da busca (fonte indisponível, nicho com poucos resultados na região, site da empresa que não abriu). Se a quantidade escolhida não foi atingida com qualidade, entregue menos e diga isso, em vez de completar com leads fracos.

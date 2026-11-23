@@ -6,11 +6,12 @@ Criada por Guilherme Mella (GODI.A).
 
 ## O que a skill faz
 
-1. Pergunta quatro coisas a quem está usando:
+1. Pergunta cinco coisas a quem está usando:
    - com o que a pessoa trabalha (ou o link do site da empresa, de onde a skill extrai os serviços);
    - a área da busca (cidade e, se quiser, bairros);
    - quantos leads quer (10, 20, 30 ou 50);
-   - o nome (e, se quiser, cargo e empresa) para assinar as mensagens.
+   - o nome (e, se quiser, cargo e empresa) para assinar as mensagens;
+   - o link do site ou página de vendas, se tiver, para ir junto nas mensagens.
 2. Busca negócios no Google Maps e lê as avaliações de cada um.
 3. Descarta negócios fechados, concorrentes diretos e franquias.
 4. Monta o diagnóstico digital de cada lead: perfil no Google, avaliações, WhatsApp, site e Instagram.
@@ -93,6 +94,8 @@ Skills ligadas na conta do Claude também carregam no Claude Code quando ele usa
 - **16/11/2026, teste 2**: mesma busca, já com leitura de avaliações e filtro de franquias. Os leads quentes caíram de 15 para 8. A conferência pelo navegador ficou pendente.
 
 - **17/11/2026, v1.1**: a skill passa a perguntar o nome para assinar as mensagens de abordagem.
+
+- **23/11/2026, v1.2**: a skill pergunta se a pessoa tem site ou página de vendas e, se tiver, inclui o link em todas as mensagens.
 
 ## Aviso sobre dados
 
